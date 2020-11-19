@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "CCINotes",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authccinotes692e7297",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
